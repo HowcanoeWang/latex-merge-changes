@@ -33,18 +33,18 @@ class Command(NamedTuple):
 # Central registry of all supported commands
 COMMAND_MAP = {
     'added': Command(
-        name='added', num_args=1, prompt="Accept addition? [a/r/k] "
+        name='added', num_args=1, prompt="Accept addition? Accept (a), Reject (r), or Keep markup (k) > "
     ),
     'deleted': Command(
-        name='deleted', num_args=1, prompt="Accept deletion? [a/r/k] "
+        name='deleted', num_args=1, prompt="Accept deletion? Accept (a), Reject (r), or Keep markup (k) > "
     ),
     'replaced': Command(
-        name='replaced', num_args=2, prompt="Accept replacement? [a/r/k] "
+        name='replaced', num_args=2, prompt="Accept replacement? Accept (a), Reject (r), or Keep markup (k) > "
     ),
     'highlight': Command(
-        name='highlight', num_args=1, prompt="Remove highlight? [r/k] "
+        name='highlight', num_args=1, prompt="Remove highlight? Reject (r), or Keep markup (k) > "
     ),
     'comment': Command(
-        name='comment', num_args=1, prompt="Remove comment? [r/k] "
+        name='comment', num_args=1, prompt="Remove comment? Reject (r), or Keep markup (k) > "
     ),
 }
