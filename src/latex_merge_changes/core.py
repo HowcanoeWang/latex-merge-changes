@@ -184,7 +184,7 @@ class ChangeProcessor:
                     pre_command_content = text[line_start:slice_start]
                     post_command_content = text[slice_end:line_end]
 
-                    if pre_command_content.isspace() and post_command_content.isspace():
+                    if not pre_command_content.strip() and not post_command_content.strip():
                         slice_start = line_start
                         if line_end_search_pos != -1:
                             slice_end = line_end + 1
